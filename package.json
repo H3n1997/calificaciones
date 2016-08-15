@@ -1,0 +1,31 @@
+{
+  "name": "examen",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "JC",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.14.0",
+    "font-awesome": "^4.6.3",
+    "hammerjs": "^2.0.8",
+    "jade": "^1.11.0",
+    "jquery-knob": "^1.2.11",
+    "materialize-css": "^0.97.7",
+    "moment": "^2.14.1",
+    "multer": "^1.2.0",
+    "normalize.css": "^4.2.0",
+    "page": "^1.7.1",
+    "superagent": "^2.2.0",
+    "yo-yo": "^1.2.2"
+  },
+  "devDependencies": {
+    "browserify": "^13.1.0",
+    "gulp": "^3.9.1",
+    "gulp-stylus": "^2.5.0",
+    "vinyl-source-stream": "^1.1.0"
+  }
+}

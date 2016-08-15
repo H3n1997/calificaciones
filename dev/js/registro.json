@@ -1,0 +1,29 @@
+estudiante={
+    nombre:'carlos',
+    contra:'150908',
+    primer:
+    {
+    pro:9,
+    mate:8,
+    ingles:5,
+    conta:7,
+    admi:8
+    },
+    segundo:
+    {
+    pro:10,
+    mate:6,
+    ingles:9,
+    conta:5,
+    admi:7
+    },
+    tercero:
+    {
+    pro:10,
+    mate:6,
+    ingles:9,
+    conta:5,
+    admi:7
+    }
+
+}
