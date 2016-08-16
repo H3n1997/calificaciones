@@ -1,6 +1,8 @@
 var page=require('page');
 var yo=require('yo-yo');
 var PromedioGral=require('../promGral/index');
+var parcial=require('../parcial/index');
+var hamer=require('hammerjs');
 var contenedor=document.getElementById('container');
 var estudiante={
     nombre:'carlos',
@@ -16,18 +18,18 @@ var estudiante={
     segundo:
     {
     pro:10,
-    mate:6,
+    mate:10,
     ingles:9,
     conta:5,
-    admi:7
+    admi:10
     },
     tercero:
     {
     pro:10,
     mate:6,
-    ingles:9,
+    ingles:0,
     conta:5,
-    admi:7
+    admi:0
     }
 
 }
@@ -44,7 +46,24 @@ page('/calificaciones',function(ctx,next){
   contenedor.appendChild(PromedioGral(estudiante));
   $(".dial").knob({readOnly:true});
 
+  $('p#btn-menu').on('click',function(){
+    $('div#menu').toggleClass('menu');
+
+  });
 });
+
+
+page('/parcial',function(ctx,next){
+  contenedor.appendChild(parcial(estudiante));
+  $(".dial").knob({readOnly:true});
+
+  $('p#btn-menu').on('click',function(){
+    $('div#menu').toggleClass('menu');
+
+  });
+});
+
+
 
 
 

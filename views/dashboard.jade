@@ -7,9 +7,30 @@ html(lang="es")
     link(href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet")
     link(rel="stylesheet", href="./css/index.css")
   body
-    header(class="container")
+    header(class="container dashboard")
       div.row
-        h1(class="col s12" ) Dashboard
+        h1(class="col s10" ) Dashboard
+        p.col.s2#btn-menu
+          i.fa.fa-bars
+
+    div#menu
+      img(src="./pictures/avatar.jpg")
+      p Juan Carlos
+      ul
+        li
+          a(href="#") Promedio General
+        li
+          a(href="#") Parcial
+        li
+          a(href="#") Materia
+        li
+          a(href="#") Excentadas
+        li
+          a(href="#") Reprobadas
+
+
+  
+  
     main(class="container" id="container")
       
     footer.container

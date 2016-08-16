@@ -10655,6 +10655,9 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
   clip: auto;
 }
 
+body {
+  position: relative;
+}
 header {
   text-align: center;
 }
@@ -10691,4 +10694,50 @@ form button[type="submit"] {
   text-align: center;
   color: #2c3e50;
   font-size: 25px;
+}
+div#menu {
+  transition: all 1s;
+  position: absolute;
+  top: 0;
+  left: -200px;
+  width: 200px;
+  background-color: #2c3e50;
+  color: #fff;
+  padding: 5px 0;
+  z-index: 999;
+}
+div#menu img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin: 10px 45px;
+  border: 3px solid #fff;
+}
+div#menu p {
+  text-align: center;
+  font-size: 20px;
+  margin: 0;
+}
+div#menu ul li {
+  margin: 10px 10px;
+  padding: 5px;
+  border-bottom: 2px solid #00bcd4;
+}
+div#menu ul li a {
+  color: #fff;
+}
+.menu {
+  left: 0 !important;
+  transition: all 2s;
+}
+header.dashboard h1 {
+  font-size: 26px;
+}
+header.dashboard p {
+  background-color: #00bcd4;
+  padding: 5px;
+}
+header.dashboard p i {
+  color: #fff;
+  padding: 5px;
 }

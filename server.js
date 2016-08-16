@@ -16,6 +16,10 @@ app.get('/calificaciones',function(req,res){
   res.render('dashboard');
 });
 
+app.get('/parcial',function(req,res){
+  res.render('dashboard');
+})
+
 app.listen(8000,function(){
   console.log("Working Server");
 });
